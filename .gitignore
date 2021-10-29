@@ -4,3 +4,6 @@
 
 /.vs
 /WcfPlayground/.vs/WcfPlayground/v16
+/WcfPlayground/.vs/WcfPlayground/config
+/WcfPlayground/WcfServiceApplication/bin
+/WcfPlayground/WcfServiceApplication/obj/Debug
