@@ -10,24 +10,16 @@ namespace WcfServiceApplication
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service1" in code, svc and config file together.
     // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
-    public class Service1 : IService1
+    public class HelloMochi : IHelloMochiService
     {
-        public string GetData(int value)
+        public string GetMochi()
         {
-            return string.Format("You entered: {0}", value);
+            return "Hi Mochi! :-)";
         }
 
-        public CompositeType GetDataUsingDataContract(CompositeType composite)
+        public string GetMochiIceCreamByFlavor(string flavor)
         {
-            if (composite == null)
-            {
-                throw new ArgumentNullException("composite");
-            }
-            if (composite.BoolValue)
-            {
-                composite.StringValue += "Suffix";
-            }
-            return composite;
+            return string.Format("Your {0} ice cream is served!", flavor);
         }
     }
 }

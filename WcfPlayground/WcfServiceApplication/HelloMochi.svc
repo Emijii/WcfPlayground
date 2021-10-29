@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="WcfServiceApplication.HelloMochi" CodeBehind="HelloMochi.svc.cs" %>
