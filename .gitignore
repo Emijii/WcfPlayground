@@ -7,3 +7,5 @@
 /WcfPlayground/.vs/WcfPlayground/config
 /WcfPlayground/WcfServiceApplication/bin
 /WcfPlayground/WcfServiceApplication/obj/Debug
+/WcfPlayground/WcfInternalServiceApplication/bin
+/WcfPlayground/WcfInternalServiceApplication/obj/Debug
