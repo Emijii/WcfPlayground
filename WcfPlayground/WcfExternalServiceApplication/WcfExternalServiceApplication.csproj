@@ -61,10 +61,22 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Connected Services\InternalServiceReference\InternalService.disco" />
+    <None Include="Connected Services\InternalServiceReference\configuration91.svcinfo" />
+    <None Include="Connected Services\InternalServiceReference\configuration.svcinfo" />
+    <None Include="Connected Services\InternalServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="ExternalService.svc" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Connected Services\InternalServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="ExternalService.svc.cs">
       <DependentUpon>ExternalService.svc</DependentUpon>
     </Compile>
@@ -75,12 +87,31 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Connected Services\InternalServiceReference\InternalService.wsdl" />
+    <None Include="Connected Services\InternalServiceReference\InternalService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\InternalServiceReference\InternalService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\InternalServiceReference\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WcfInternalServiceApplication\WcfInternalServiceApplication.csproj">
+      <Project>{C697A958-B8F6-4CC7-9D8E-DD3381A039B0}</Project>
+      <Name>WcfInternalServiceApplication</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

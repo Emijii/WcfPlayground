@@ -8,6 +8,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfInternalServiceApplication", "WcfInternalServiceApplication\WcfInternalServiceApplication.csproj", "{C697A958-B8F6-4CC7-9D8E-DD3381A039B0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfExternalServiceApplication", "WcfExternalServiceApplication\WcfExternalServiceApplication.csproj", "{5E9A7616-C5B7-4EF9-AB82-9820E17C39E7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C697A958-B8F6-4CC7-9D8E-DD3381A039B0} = {C697A958-B8F6-4CC7-9D8E-DD3381A039B0}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

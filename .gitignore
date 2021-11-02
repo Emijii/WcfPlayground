@@ -11,3 +11,6 @@
 /WcfPlayground/WcfInternalServiceApplication/obj/Debug
 /WcfPlayground/WcfExternalServiceApplication/bin
 /WcfPlayground/WcfExternalServiceApplication/obj/Debug
+/WcfPlayground/WcfExternalServiceApplication/obj/Release
+/WcfPlayground/WcfInternalServiceApplication/obj/Release
+/WcfPlayground/WcfServiceApplication/obj/Release
