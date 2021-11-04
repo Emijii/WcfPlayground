@@ -1,0 +1,18 @@
+﻿1. Create a database named Test.
+2. Create an ice cream flavor table.
+
+CREATE TABLE [dbo].[IceCreamFlavor](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Name] [nvarchar](50) NOT NULL,
+	[Description] [nvarchar](50) NOT NULL
+) ON [PRIMARY]
+
+3. Add data to the ice cream flavor table.
+
+Insert Into IceCreamFlavor (Name, Description) Values ('Chocolate', 'Chocolate ice cream is a great choice!')
+Insert Into IceCreamFlavor (Name, Description) Values ('Vanilla', 'Vanilla ice cream is a great choice!')
+Insert Into IceCreamFlavor (Name, Description) Values ('Pistachio', 'Pistachio ice cream is a great choice!')
+Insert Into IceCreamFlavor (Name, Description) Values ('Strawberry', 'Strawberry ice cream is a great choice!')
+Insert Into IceCreamFlavor (Name, Description) Values ('Raspberry', 'Raspberry ice cream is a great choice!')
+
+Select * From IceCreamFlavor
