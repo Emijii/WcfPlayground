@@ -2,6 +2,11 @@
 {
     public class InternalService : IInternalService
     {
+        public string GetIceCreamFlavorById(int id)
+        {
+            throw new System.NotImplementedException();
+        }
+
         public string GetMochi()
         {
             return "Hi Mochi! :-) - Internal Service Called";

@@ -6,6 +6,9 @@ namespace WcfInternalServiceApplication
     public interface IInternalService
     {
         [OperationContract]
+        string GetIceCreamFlavorById(int id);
+
+        [OperationContract]
         string GetMochi();
 
         [OperationContract]
